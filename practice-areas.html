@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Areas of legal interest – Aarav Sharma, Law Student, Tribhuvan University." />
+  <title>Areas of Interest | Aarav Sharma</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-inner">
+        <div class="top-bar-left">
+          <span><i class="fas fa-calendar-alt"></i><span id="live-date"></span></span>
+          <span><i class="fas fa-map-marker-alt"></i><span data-lang-key="topbar-location">Kathmandu, Nepal</span></span>
+        </div>
+        <div class="top-bar-right">
+          <div class="top-bar-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:aarav.sharma@law.tu.edu.np" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="lang-toggle">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="ne">नेपाली</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-logo">
+          <div class="logo-emblem">⚖️</div>
+          <div class="header-title-group">
+            <div class="name" data-lang-key="header-name">Aarav Sharma</div>
+            <div class="name-ne" data-lang-key="header-name-ne">आरव शर्मा</div>
+            <div class="designation" data-lang-key="header-designation">Law Student · 5th Semester · Tribhuvan University</div>
+          </div>
+        </div>
+        <div class="header-contact-info">
+          <a href="mailto:aarav.sharma@law.tu.edu.np"><i class="fas fa-envelope"></i><span data-lang-key="header-email">aarav.sharma@law.tu.edu.np</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav class="main-nav">
+    <div class="container">
+      <div class="nav-inner">
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i><span data-lang-key="nav-home">Home</span></a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link"><i class="fas fa-user-tie"></i><span data-lang-key="nav-about">About Me</span></a></li>
+          <li class="nav-item">
+            <a href="practice-areas.html" class="nav-link active"><i class="fas fa-balance-scale"></i><span data-lang-key="nav-practice">Areas of Interest</span><i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#constitutional" class="dropdown-item"><i class="fas fa-landmark"></i><span data-lang-key="nav-sub-constitutional">Constitutional Law</span></a></li>
+              <li><a href="#criminal" class="dropdown-item"><i class="fas fa-gavel"></i><span data-lang-key="nav-sub-criminal">Criminal Law</span></a></li>
+              <li><a href="#civil" class="dropdown-item"><i class="fas fa-file-contract"></i><span data-lang-key="nav-sub-civil">Civil Law</span></a></li>
+              <li><a href="#human-rights" class="dropdown-item"><i class="fas fa-hands-helping"></i><span data-lang-key="nav-sub-human-rights">Human Rights</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link"><i class="fas fa-briefcase"></i><span data-lang-key="nav-projects">Projects</span><i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="projects.html#research" class="dropdown-item"><i class="fas fa-search"></i><span data-lang-key="nav-sub-research">Research Papers</span></a></li>
+              <li><a href="projects.html#moot" class="dropdown-item"><i class="fas fa-microphone"></i><span data-lang-key="nav-sub-moot">Moot Court</span></a></li>
+              <li><a href="projects.html#community" class="dropdown-item"><i class="fas fa-users"></i><span data-lang-key="nav-sub-community">Community Work</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="articles.html" class="nav-link"><i class="fas fa-newspaper"></i><span data-lang-key="nav-articles">Articles</span><i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="articles.html#research" class="dropdown-item"><i class="fas fa-scroll"></i><span data-lang-key="nav-sub-research">Research Papers</span></a></li>
+              <li><a href="articles.html#blog" class="dropdown-item"><i class="fas fa-pen"></i><span data-lang-key="nav-sub-blog">Legal Blog</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-envelope-open-text"></i><span data-lang-key="nav-contact">Contact</span></a></li>
+        </ul>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html"><i class="fas fa-home"></i> <span data-lang-key="nav-home">Home</span></a>
+        <i class="fas fa-chevron-right"></i>
+        <span class="current" data-lang-key="nav-practice">Areas of Interest</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container" style="position:relative;">
+      <div class="page-hero-content fade-in">
+        <h1 data-lang-key="practice-page-title">Areas of Legal Interest</h1>
+        <p data-lang-key="practice-page-desc">The legal domains I study, research, and am passionate about.</p>
+      </div>
+      <i class="fas fa-balance-scale page-hero-icon" aria-hidden="true"></i>
+    </div>
+  </section>
+
+  <!-- AREAS CONTENT -->
+  <section class="section-padding" style="background:var(--bg-light);">
+    <div class="container">
+
+      <!-- All 6 area cards in full detail -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:30px;">
+
+        <!-- Constitutional Law -->
+        <div class="area-card fade-in" id="constitutional">
+          <div class="area-card-icon"><i class="fas fa-landmark"></i></div>
+          <div class="area-card-body">
+            <h3 data-lang-key="area-1-title">Constitutional Law</h3>
+            <p data-lang-key="area-1-desc">Studying the foundational laws of Nepal's 2015 Constitution, fundamental rights, directive principles, and constitutional bodies with a focus on judicial review.</p>
+            <div class="area-tags">
+              <span class="badge badge-blue">Fundamental Rights</span>
+              <span class="badge badge-gold">Judicial Review</span>
+              <span class="badge badge-blue">Directive Principles</span>
+            </div>
+            <div style="margin-top:16px;padding:14px;background:var(--bg-section);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-medium);">
+              <strong style="color:var(--primary);">Key Subjects Covered:</strong><br/>
+              Constitution of Nepal 2015, Writ Jurisdiction, Separation of Powers, Fundamental Rights (Arts. 16–46), Constitutional Commission Law
+            </div>
+          </div>
+        </div>
+
+        <!-- Human Rights -->
+        <div class="area-card fade-in" id="human-rights">
+          <div class="area-card-icon" style="background:linear-gradient(135deg,#8b0000,#c0392b);"><i class="fas fa-hands-helping"></i></div>
+          <div class="area-card-body">
+            <h3 data-lang-key="area-2-title">Human Rights Law</h3>
+            <p data-lang-key="area-2-desc">Researching international and domestic human rights frameworks, the role of NHRC, and protection of marginalised communities under Nepali law.</p>
+            <div class="area-tags">
+              <span class="badge badge-red">NHRC</span>
+              <span class="badge badge-blue">International Law</span>
+              <span class="badge badge-green">Marginalised Communities</span>
+            </div>
+            <div style="margin-top:16px;padding:14px;background:var(--bg-section);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-medium);">
+              <strong style="color:var(--primary);">Key Subjects Covered:</strong><br/>
+              ICCPR, ICESCR, CEDAW, CRC, NHRC Act 2012, Paris Principles, International Humanitarian Law
+            </div>
+          </div>
+        </div>
+
+        <!-- Criminal Law -->
+        <div class="area-card fade-in" id="criminal">
+          <div class="area-card-icon" style="background:linear-gradient(135deg,#1a3c6e,#1a4a8a);"><i class="fas fa-gavel"></i></div>
+          <div class="area-card-body">
+            <h3 data-lang-key="area-3-title">Criminal Law &amp; Procedure</h3>
+            <p data-lang-key="area-3-desc">In-depth study of the National Penal Code 2017, criminal procedure, evidence law, and victim rights within Nepal's justice system.</p>
+            <div class="area-tags">
+              <span class="badge badge-red">Penal Code 2017</span>
+              <span class="badge badge-green">Victim Rights</span>
+              <span class="badge badge-blue">Evidence Law</span>
+            </div>
+            <div style="margin-top:16px;padding:14px;background:var(--bg-section);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-medium);">
+              <strong style="color:var(--primary);">Key Subjects Covered:</strong><br/>
+              National Penal Code 2074, Criminal Procedure Code, Evidence Act, Domestic Violence Act, Juvenile Justice
+            </div>
+          </div>
+        </div>
+
+        <!-- Civil & Family Law -->
+        <div class="area-card fade-in" id="civil">
+          <div class="area-card-icon" style="background:linear-gradient(135deg,#1a5c2a,#28a745);"><i class="fas fa-file-contract"></i></div>
+          <div class="area-card-body">
+            <h3 data-lang-key="area-4-title">Civil &amp; Family Law</h3>
+            <p data-lang-key="area-4-desc">Exploring civil procedure, property rights, contract law, and family law regulations including marriage, divorce, and inheritance under Nepali statute.</p>
+            <div class="area-tags">
+              <span class="badge badge-green">Contract Law</span>
+              <span class="badge badge-blue">Property Rights</span>
+              <span class="badge badge-gold">Family Law</span>
+            </div>
+            <div style="margin-top:16px;padding:14px;background:var(--bg-section);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-medium);">
+              <strong style="color:var(--primary);">Key Subjects Covered:</strong><br/>
+              Civil Procedure Code, Contract Act, Muluki Civil Code 2074, Land Acquisition Act, Inheritance Laws
+            </div>
+          </div>
+        </div>
+
+        <!-- Environmental Law -->
+        <div class="area-card fade-in">
+          <div class="area-card-icon" style="background:linear-gradient(135deg,#2a6b2a,#388e3c);"><i class="fas fa-leaf"></i></div>
+          <div class="area-card-body">
+            <h3 data-lang-key="area-5-title">Environmental Law</h3>
+            <p data-lang-key="area-5-desc">Studying environmental protection laws, climate justice, and the intersection of constitutional rights with environmental governance in Nepal.</p>
+            <div class="area-tags">
+              <span class="badge badge-green">Climate Justice</span>
+              <span class="badge badge-blue">Right to Clean Environment</span>
+            </div>
+            <div style="margin-top:16px;padding:14px;background:var(--bg-section);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-medium);">
+              <strong style="color:var(--primary);">Key Subjects Covered:</strong><br/>
+              National Parks Act, Environment Protection Act 2076, Paris Agreement, Right to Clean Environment (Art. 30)
+            </div>
+          </div>
+        </div>
+
+        <!-- Labour Law -->
+        <div class="area-card fade-in">
+          <div class="area-card-icon" style="background:linear-gradient(135deg,#7a4500,#c9a227);"><i class="fas fa-hard-hat"></i></div>
+          <div class="area-card-body">
+            <h3 data-lang-key="area-6-title">Labour &amp; Employment Law</h3>
+            <p data-lang-key="area-6-desc">Research into the Labour Act 2017, workers' rights, trade union law, and dispute resolution mechanisms in Nepali workplaces.</p>
+            <div class="area-tags">
+              <span class="badge badge-gold">Labour Act 2017</span>
+              <span class="badge badge-blue">Workers' Rights</span>
+              <span class="badge badge-red">Trade Unions</span>
+            </div>
+            <div style="margin-top:16px;padding:14px;background:var(--bg-section);border-radius:var(--radius-sm);font-size:0.85rem;color:var(--text-medium);">
+              <strong style="color:var(--primary);">Key Subjects Covered:</strong><br/>
+              Labour Act 2074, Social Security Act, Trade Union Act, Foreign Employment Act, ILO Conventions
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <h2 data-lang-key="cta-title">Interested in Working Together?</h2>
+        <p data-lang-key="cta-desc">Whether you need a legal research collaborator, an intern, or just want to discuss ideas — I would love to connect.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-gold"><i class="fas fa-envelope"></i><span data-lang-key="cta-btn-contact">Get In Touch</span></a>
+          <a href="index.html" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.5);"><i class="fas fa-home"></i><span data-lang-key="btn-back-home">Back to Home</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (reuse same footer) -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-col-title" data-lang-key="header-name">Aarav Sharma</div>
+            <p class="footer-about" data-lang-key="footer-about">A passionate 5th semester Law student at Tribhuvan University.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="mailto:aarav.sharma@law.tu.edu.np"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-col-title" data-lang-key="footer-quicklinks">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-home">Home</span></a></li>
+              <li><a href="about.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-about">About Me</span></a></li>
+              <li><a href="projects.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-projects">Projects</span></a></li>
+              <li><a href="articles.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-articles">Articles</span></a></li>
+              <li><a href="contact.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-contact">Contact</span></a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title" data-lang-key="footer-legalwork">Legal Work</div>
+            <ul class="footer-links">
+              <li><a href="#constitutional"><i class="fas fa-chevron-right"></i> Constitutional Law</a></li>
+              <li><a href="#human-rights"><i class="fas fa-chevron-right"></i> Human Rights</a></li>
+              <li><a href="#criminal"><i class="fas fa-chevron-right"></i> Criminal Law</a></li>
+              <li><a href="#civil"><i class="fas fa-chevron-right"></i> Civil Law</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title" data-lang-key="footer-getintouch">Get In Touch</div>
+            <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span data-lang-key="contact-info-address-value">Kirtipur, Kathmandu, Nepal</span></div>
+            <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:aarav.sharma@law.tu.edu.np">aarav.sharma@law.tu.edu.np</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p data-lang-key="footer-copyright">© 2025 <strong>Aarav Sharma</strong>. All Rights Reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#" data-lang-key="footer-privacy">Privacy Policy</a>
+            <a href="#" data-lang-key="footer-disclaimer">Disclaimer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scroll-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

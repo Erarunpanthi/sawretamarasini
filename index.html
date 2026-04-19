@@ -1,136 +1,747 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arun Panthi - Civil Engineer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <!-- FontAwesome for Social Media Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aarav Sharma – Law Student at Tribhuvan University, Nepal. Portfolio showcasing legal research, projects, articles, and experience." />
+  <meta name="keywords" content="law student Nepal, Tribhuvan University law, legal portfolio, aarav sharma" />
+  <meta name="author" content="Aarav Sharma" />
+  <meta property="og:title" content="Aarav Sharma | Law Student Portfolio" />
+  <meta property="og:description" content="5th Semester LL.B. Student, Tribhuvan University, Kathmandu, Nepal." />
+  <meta property="og:type" content="website" />
+  <title>Aarav Sharma | Law Student Portfolio</title>
+
+  <!-- Favicon (use a scales-of-justice emoji as SVG fallback) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Arun Panthi – Civil Engineer </h1>
-            <div class="cta-buttons">
-              <a href="#note-solution-books" class="cta-button">Explore Now</a>
-              <a href="tel:+9779867423755" class="cta-button">Contact Me</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- About Section with Circular Image -->
-   <section class="section" id="note-solution-books">
-    <div class="about-content">
-      <div class="about-left">
-        <img src="Er.Arunpanthi.jpg" alt="Arun Panthi" class="profile-img">
-      </div>
-      <div class="about-right">
-        <h2>About Arun Panthi</h2>
-        <p>I am a fresh Civil Engineer with a Bachelor's degree . With a passion for creating safe, sustainable, and innovative structures, I specialize in seismic analysis, structural design, and project management. I aim to contribute to the engineering field with a focus on sustainability and quality. I am always eager to learn and grow, applying my knowledge to real-world projects and continuing to expand my expertise.</p>
-        <p>Through my internship with the Road Division in Surkhet, I gained hands-on experience in infrastructure development. I contributed to a hotel construction project, where I was involved in the design, project management, and quality control processes. This experience has deepened my understanding of civil engineering practices and solidified my commitment to excellence in every project I undertake.</p>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Education Section (Styled Like Technical Skills) -->
-  <section id="education">
-    <h2 class="section-title">Education</h2>
-    <div class="education-grid">
-      <div class="edu-item">
-        <div class="edu-card">
-          <h3>SLC</h3>
-          <p>Completed at Shree Shiddhababa Mavi, 2073</p>
-        </div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-card">
-          <h3>+2</h3>
-          <p>Completed at Shree Shiddhababa Mavi, 2076</p>
-        </div>
-      </div>
-      <div class="edu-item">
-        <div class="edu-card">
-          <h3>Bachelor’s</h3>
-          <p>Bachelor's degree in Civil Engineering , 2081</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Internship Section -->
-  <section id="internship">
-    <h2 class="section-title">Internship Experience</h2>
-    <div class="internship-grid">
-      <div class="internship-item">
-        <div class="internship-card">
-          <h3>Road Division, Surkhet</h3>
-          <p>Intern at the Road Division, Surkhet, where I was involved in road development and maintenance projects. This role allowed me to work on real-world infrastructure problems, gaining invaluable insights into project execution and management.</p>
-     <a href="Intern.jpg" class="cta-button">View Experience Letter</a>
-        </div>
-        
-      </div>
-      
-      <div class="internship-item">
-        <div class="internship-card">
-          <h3>Hotel Construction Project</h3>
-          <p>As part of my internship, I also worked on the construction of a hotel building. I contributed to the structural design and project management, ensuring the project adhered to timelines, quality standards, and safety regulations.</p>
-       <a href="project.jpg" class="cta-button">View Project Detail</a>
-        </div>
-      
-      </div>
-    </div>
-  </section>
-  <!-- Skills Section -->
-  <section id="skills" class="section skills">
+  <!-- ══════════════════════════════════════════════════════════
+       TOP UTILITY BAR
+       ══════════════════════════════════════════════════════════ -->
+  <div class="top-bar" role="banner">
     <div class="container">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <i class="fas fa-drafting-compass"></i>
-          <h3>AutoCAD</h3>
-          <p>Expert in precise 2D and 3D designs.</p>
+      <div class="top-bar-inner">
+        <div class="top-bar-left">
+          <span>
+            <i class="fas fa-calendar-alt"></i>
+            <span id="live-date">Loading date...</span>
+          </span>
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-lang-key="topbar-location">Kathmandu, Nepal</span>
+          </span>
+          <span>
+            <i class="fas fa-circle" style="color:#28a745;font-size:0.5rem;"></i>
+            <span data-lang-key="topbar-available">Available for Internships</span>
+          </span>
         </div>
-        <div class="skill-card">
-          <i class="fas fa-city"></i>
-          <h3>STAAD.Pro</h3>
-          <p>Proficient in structural analysis and design.</p>
+        <div class="top-bar-right">
+          <div class="top-bar-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+            <a href="mailto:aarav.sharma@law.tu.edu.np" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <!-- Language Toggle -->
+          <div class="lang-toggle" role="group" aria-label="Language selection">
+            <button class="lang-btn active" data-lang="en" aria-label="Switch to English">EN</button>
+            <button class="lang-btn" data-lang="ne" aria-label="नेपालीमा बदल्नुहोस्">नेपाली</button>
+          </div>
         </div>
-        <div class="skill-card">
-          <i class="fas fa-building"></i>
-          <h3>SketchUp</h3>
-          <p>3D modeling for architectural excellence.</p>
-        </div>
-        <div class="skill-card">
-          <i class="fas fa-tools"></i>
-          <h3>SAP2000</h3>
-          <p>Advanced seismic and structural analysis.</p>
-        </div>
-        <div class="skill-card">
-  <i class="fas fa-table"></i>
-  <h3>Excel</h3>
-  <p>Expert in data analysis, spreadsheet modeling, and visualization.</p>
-</div>
+      </div>
+    </div>
+  </div>
 
+  <!-- ══════════════════════════════════════════════════════════
+       SITE HEADER
+       ══════════════════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-logo">
+          <div class="logo-emblem" aria-hidden="true">⚖️</div>
+          <div class="header-title-group">
+            <div class="name" data-lang-key="header-name">Aarav Sharma</div>
+            <div class="name-ne" data-lang-key="header-name-ne">आरव शर्मा</div>
+            <div class="designation" data-lang-key="header-designation">
+              Law Student · 5th Semester · Tribhuvan University
+            </div>
+          </div>
+        </div>
+        <div class="header-contact-info">
+          <a href="mailto:aarav.sharma@law.tu.edu.np">
+            <i class="fas fa-envelope"></i>
+            <span data-lang-key="header-email">aarav.sharma@law.tu.edu.np</span>
+          </a>
+          <a href="tel:+97798XXXXXXXX">
+            <i class="fas fa-phone"></i>
+            <span data-lang-key="header-phone">+977-98XXXXXXXX</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════════
+       MAIN NAVIGATION
+       ══════════════════════════════════════════════════════════ -->
+  <nav class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+        <ul class="nav-menu" id="nav-menu" role="menubar">
+          <li class="nav-item" role="none">
+            <a href="index.html" class="nav-link active" role="menuitem">
+              <i class="fas fa-home"></i>
+              <span data-lang-key="nav-home">Home</span>
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="about.html" class="nav-link" role="menuitem">
+              <i class="fas fa-user-tie"></i>
+              <span data-lang-key="nav-about">About Me</span>
+            </a>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="practice-areas.html" class="nav-link" role="menuitem" aria-haspopup="true">
+              <i class="fas fa-balance-scale"></i>
+              <span data-lang-key="nav-practice">Areas of Interest</span>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="practice-areas.html#constitutional" class="dropdown-item" role="menuitem"><i class="fas fa-landmark"></i> <span data-lang-key="nav-sub-constitutional">Constitutional Law</span></a></li>
+              <li><a href="practice-areas.html#criminal" class="dropdown-item" role="menuitem"><i class="fas fa-gavel"></i> <span data-lang-key="nav-sub-criminal">Criminal Law</span></a></li>
+              <li><a href="practice-areas.html#civil" class="dropdown-item" role="menuitem"><i class="fas fa-file-contract"></i> <span data-lang-key="nav-sub-civil">Civil Law</span></a></li>
+              <li><a href="practice-areas.html#human-rights" class="dropdown-item" role="menuitem"><i class="fas fa-hands-helping"></i> <span data-lang-key="nav-sub-human-rights">Human Rights</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="projects.html" class="nav-link" role="menuitem" aria-haspopup="true">
+              <i class="fas fa-briefcase"></i>
+              <span data-lang-key="nav-projects">Projects</span>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="projects.html#research" class="dropdown-item" role="menuitem"><i class="fas fa-search"></i> <span data-lang-key="nav-sub-research">Research Papers</span></a></li>
+              <li><a href="projects.html#moot" class="dropdown-item" role="menuitem"><i class="fas fa-microphone"></i> <span data-lang-key="nav-sub-moot">Moot Court</span></a></li>
+              <li><a href="projects.html#internship" class="dropdown-item" role="menuitem"><i class="fas fa-building"></i> <span data-lang-key="nav-sub-internship">Internships</span></a></li>
+              <li><a href="projects.html#community" class="dropdown-item" role="menuitem"><i class="fas fa-users"></i> <span data-lang-key="nav-sub-community">Community Work</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="articles.html" class="nav-link" role="menuitem" aria-haspopup="true">
+              <i class="fas fa-newspaper"></i>
+              <span data-lang-key="nav-articles">Articles</span>
+              <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="articles.html#research" class="dropdown-item" role="menuitem"><i class="fas fa-scroll"></i> <span data-lang-key="nav-sub-research">Research Papers</span></a></li>
+              <li><a href="articles.html#blog" class="dropdown-item" role="menuitem"><i class="fas fa-pen"></i> <span data-lang-key="nav-sub-blog">Legal Blog</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-item" role="none">
+            <a href="contact.html" class="nav-link" role="menuitem">
+              <i class="fas fa-envelope-open-text"></i>
+              <span data-lang-key="nav-contact">Contact</span>
+            </a>
+          </li>
+        </ul>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════
+       NOTICE / TICKER BAR
+       ══════════════════════════════════════════════════════════ -->
+  <div class="notice-bar" role="region" aria-label="Notice board">
+    <div class="container">
+      <div class="notice-inner">
+        <div class="notice-label">
+          <i class="fas fa-bullhorn"></i>
+          <span data-lang-key="notice-label">NOTICE</span>
+        </div>
+        <div class="notice-ticker-wrap">
+          <div class="notice-ticker" id="notice-ticker">
+            <a href="contact.html">
+              <i class="fas fa-circle" style="font-size:0.5rem;"></i>
+              <span data-lang-key="notice-1">Currently seeking internship opportunities at law firms and NGOs in Kathmandu.</span>
+            </a>
+            <a href="articles.html">
+              <i class="fas fa-circle" style="font-size:0.5rem;"></i>
+              <span data-lang-key="notice-2">New article published: "Constitutional Rights of Indigenous Peoples in Nepal".</span>
+            </a>
+            <a href="projects.html">
+              <i class="fas fa-circle" style="font-size:0.5rem;"></i>
+              <span data-lang-key="notice-3">Participated in National Moot Court Competition 2024 – Finalist.</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO SECTION
+       ══════════════════════════════════════════════════════════ -->
+  <section class="hero-section" aria-label="Introduction">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Photo Column -->
+        <div class="hero-image-col fade-in">
+          <div class="hero-photo-frame">
+            <!-- Replace src with your actual photo -->
+            <div class="hero-photo-placeholder" aria-label="Profile photo of Aarav Sharma">
+              <i class="fas fa-user-tie"></i>
+            </div>
+          </div>
+          <div class="hero-status-badge" data-lang-key="hero-status">
+            ✦ Open to Opportunities
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="hero-content fade-in">
+          <p class="pretitle" data-lang-key="hero-pretitle">Welcome to My Portfolio</p>
+          <h1 data-lang-key="hero-name">Aarav Sharma</h1>
+          <p class="hero-tagline" data-lang-key="hero-tagline">
+            "Justice is the foundation of a civilised society."
+          </p>
+
+          <div class="hero-info-grid">
+            <div class="hero-info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span data-lang-key="hero-info-degree">LL.B. (5th Semester)</span>
+            </div>
+            <div class="hero-info-item">
+              <i class="fas fa-university"></i>
+              <span data-lang-key="hero-info-uni">Tribhuvan University</span>
+            </div>
+            <div class="hero-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-lang-key="hero-info-loc">Kathmandu, Nepal</span>
+            </div>
+            <div class="hero-info-item">
+              <i class="fas fa-language"></i>
+              <span data-lang-key="hero-info-lang">Nepali | English | Hindi</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="assets/cv-aarav-sharma.pdf" class="btn btn-gold btn-download-cv" download>
+              <i class="fas fa-download"></i>
+              <span data-lang-key="hero-btn-cv">Download CV</span>
+            </a>
+            <a href="contact.html" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.5);">
+              <i class="fas fa-envelope"></i>
+              <span data-lang-key="hero-btn-contact">Contact Me</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <div class="social-media">
-            <h2><i class="fab fa-connectdevelop"></i> Connect with Us</h2>
-            <p>Follow us on social media to stay updated with the latest resources and news.</p>
-            <div class="icons">
-                <a href="https://www.facebook.com/arun.panthi27" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.tiktok.com/@er.arunpanthi" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/@erarunpanthi" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="mailto:erarunpanthi@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       STATS BAR
+       ══════════════════════════════════════════════════════════ -->
+  <div class="stats-bar" role="region" aria-label="Key statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-target="5" data-suffix="+">0</span>
+          <span class="stat-label" data-lang-key="stat-1-label">Semesters Completed</span>
         </div>
-    </main>
-    <footer>
-      
-    <script src="script.js"></script>
+        <div class="stat-item">
+          <span class="stat-number" data-target="12" data-suffix="+">0</span>
+          <span class="stat-label" data-lang-key="stat-2-label">Projects Completed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="8" data-suffix="+">0</span>
+          <span class="stat-label" data-lang-key="stat-3-label">Articles Published</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4" data-suffix="+">0</span>
+          <span class="stat-label" data-lang-key="stat-4-label">Awards & Honours</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       ABOUT SECTION
+       ══════════════════════════════════════════════════════════ -->
+  <section class="about-section section-padding" id="about" aria-label="About Me">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left: Text -->
+        <div class="about-text fade-in">
+          <div class="section-title" data-lang-key="about-section-title">About Me</div>
+          <div class="title-divider"></div>
+          <p class="section-subtitle" data-lang-key="about-section-subtitle">
+            Know who I am, what I do, and what drives me.
+          </p>
+          <p data-lang-key="about-p1">
+            I am Aarav Sharma, a dedicated Law student currently in my 5th semester at the Faculty of Law, Tribhuvan University, Kathmandu.
+          </p>
+          <p data-lang-key="about-p2">
+            I have engaged in legal research, moot court competitions, community legal awareness programs, and internships with renowned law firms.
+          </p>
+          <blockquote class="about-quote">
+            <p data-lang-key="about-quote">"The law is reason, free from passion." — Aristotle</p>
+          </blockquote>
+          <a href="about.html" class="btn btn-primary">
+            <i class="fas fa-arrow-right"></i>
+            <span data-lang-key="about-btn-more">Read Full Profile</span>
+          </a>
+        </div>
+
+        <!-- Right: Info Cards -->
+        <div class="about-sidebar fade-in">
+          <!-- Personal Info -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <i class="fas fa-id-card"></i>
+              <span data-lang-key="info-card-personal">Personal Information</span>
+            </div>
+            <div class="info-card-body">
+              <div class="info-row">
+                <span class="info-row-label" data-lang-key="info-full-name-label">Full Name</span>
+                <span class="info-row-value" data-lang-key="info-full-name-value">Aarav Sharma</span>
+              </div>
+              <div class="info-row">
+                <span class="info-row-label" data-lang-key="info-nationality-label">Nationality</span>
+                <span class="info-row-value" data-lang-key="info-nationality-value">Nepali</span>
+              </div>
+              <div class="info-row">
+                <span class="info-row-label" data-lang-key="info-uni-label">University</span>
+                <span class="info-row-value" data-lang-key="info-uni-value">Tribhuvan University</span>
+              </div>
+              <div class="info-row">
+                <span class="info-row-label" data-lang-key="info-semester-label">Semester</span>
+                <span class="info-row-value" data-lang-key="info-semester-value">5th Semester, LL.B.</span>
+              </div>
+              <div class="info-row">
+                <span class="info-row-label" data-lang-key="info-email-label">Email</span>
+                <span class="info-row-value">
+                  <a href="mailto:aarav.sharma@law.tu.edu.np" style="color:var(--secondary);">aarav.sharma@law.tu.edu.np</a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="info-card">
+            <div class="info-card-header">
+              <i class="fas fa-chart-bar"></i>
+              <span data-lang-key="skills-card-title">Key Legal Skills</span>
+            </div>
+            <div class="info-card-body">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span data-lang-key="skill-legal-research">Legal Research</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span data-lang-key="skill-moot-court">Moot Court / Advocacy</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span data-lang-key="skill-drafting">Legal Drafting</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span data-lang-key="skill-analysis">Case Analysis</span>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span data-lang-key="skill-nepali">Nepali Legal Writing</span>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       AREAS OF INTEREST
+       ══════════════════════════════════════════════════════════ -->
+  <section class="areas-section section-padding" aria-label="Areas of legal interest">
+    <div class="container">
+      <div class="text-center fade-in">
+        <div class="section-title" data-lang-key="areas-section-title">Areas of Legal Interest</div>
+        <div class="title-divider centered"></div>
+        <p class="section-subtitle" data-lang-key="areas-section-subtitle">
+          The branches of law I study, research, and work in.
+        </p>
+      </div>
+      <div class="areas-grid">
+        <!-- Area 1 -->
+        <div class="area-card fade-in">
+          <div class="area-card-icon"><i class="fas fa-landmark"></i></div>
+          <div class="area-card-body">
+            <h3 data-lang-key="area-1-title">Constitutional Law</h3>
+            <p data-lang-key="area-1-desc">Studying the foundational laws of Nepal's 2015 Constitution, fundamental rights, directive principles, and constitutional bodies.</p>
+            <div class="area-tags">
+              <span class="badge badge-blue">Fundamental Rights</span>
+              <span class="badge badge-gold">Judicial Review</span>
+            </div>
+          </div>
+        </div>
+        <!-- Area 2 -->
+        <div class="area-card fade-in">
+          <div class="area-card-icon"><i class="fas fa-hands-helping"></i></div>
+          <div class="area-card-body">
+            <h3 data-lang-key="area-2-title">Human Rights Law</h3>
+            <p data-lang-key="area-2-desc">Researching international and domestic human rights frameworks, the role of NHRC, and protection of marginalised communities.</p>
+            <div class="area-tags">
+              <span class="badge badge-red">NHRC</span>
+              <span class="badge badge-blue">International Law</span>
+            </div>
+          </div>
+        </div>
+        <!-- Area 3 -->
+        <div class="area-card fade-in">
+          <div class="area-card-icon"><i class="fas fa-gavel"></i></div>
+          <div class="area-card-body">
+            <h3 data-lang-key="area-3-title">Criminal Law &amp; Procedure</h3>
+            <p data-lang-key="area-3-desc">In-depth study of the National Penal Code 2017, criminal procedure, evidence law, and victim rights within Nepal's justice system.</p>
+            <div class="area-tags">
+              <span class="badge badge-red">Penal Code</span>
+              <span class="badge badge-green">Victim Rights</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:36px;">
+        <a href="practice-areas.html" class="btn btn-primary fade-in">
+          <i class="fas fa-arrow-right"></i> View All Areas
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FEATURED PROJECTS
+       ══════════════════════════════════════════════════════════ -->
+  <section class="projects-section section-padding" aria-label="Featured projects">
+    <div class="container">
+      <div class="text-center fade-in">
+        <div class="section-title" data-lang-key="projects-section-title">My Projects</div>
+        <div class="title-divider centered"></div>
+        <p class="section-subtitle" data-lang-key="projects-section-subtitle">
+          Academic projects, research, and community initiatives.
+        </p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card fade-in" data-category="community">
+          <div class="project-card-image">
+            <i class="fas fa-balance-scale"></i>
+            <div class="project-card-status">
+              <span class="badge badge-green">Completed</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 data-lang-key="proj-1-title">Legal Aid Clinic – Kathmandu</h3>
+            <p data-lang-key="proj-1-desc">Organised and participated in a free legal aid clinic in Kirtipur, providing basic legal consultation to underprivileged communities.</p>
+            <div class="project-meta">
+              <span><i class="fas fa-calendar"></i> 2024</span>
+              <span><i class="fas fa-map-marker-alt"></i> Kirtipur</span>
+              <span><i class="fas fa-tag"></i> Community</span>
+            </div>
+            <a href="projects.html" class="btn btn-outline" style="font-size:0.85rem;padding:8px 18px;">
+              <i class="fas fa-arrow-right"></i>
+              <span data-lang-key="btn-view-detail">View Details</span>
+            </a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card fade-in" data-category="research">
+          <div class="project-card-image" style="background:linear-gradient(135deg,#003366,#1a4a8a);">
+            <i class="fas fa-child"></i>
+            <div class="project-card-status">
+              <span class="badge badge-blue">Published</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 data-lang-key="proj-2-title">Research: Child Rights in Nepal</h3>
+            <p data-lang-key="proj-2-desc">An academic research paper analysing the implementation of the Convention on the Rights of the Child within the Nepali legal system.</p>
+            <div class="project-meta">
+              <span><i class="fas fa-calendar"></i> 2023</span>
+              <span><i class="fas fa-university"></i> TU Law Faculty</span>
+              <span><i class="fas fa-tag"></i> Research</span>
+            </div>
+            <a href="projects.html" class="btn btn-outline" style="font-size:0.85rem;padding:8px 18px;">
+              <i class="fas fa-arrow-right"></i>
+              <span data-lang-key="btn-view-detail">View Details</span>
+            </a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card fade-in" data-category="moot">
+          <div class="project-card-image" style="background:linear-gradient(135deg,#8b0000,#c0392b);">
+            <i class="fas fa-microphone"></i>
+            <div class="project-card-status">
+              <span class="badge badge-gold">Finalist</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <h3 data-lang-key="proj-3-title">Moot Court – National Competition 2024</h3>
+            <p data-lang-key="proj-3-desc">Represented the Faculty of Law in the National Inter-University Moot Court Competition, advancing to the finals on a constitutional rights problem.</p>
+            <div class="project-meta">
+              <span><i class="fas fa-calendar"></i> 2024</span>
+              <span><i class="fas fa-trophy"></i> National Finalist</span>
+              <span><i class="fas fa-tag"></i> Moot Court</span>
+            </div>
+            <a href="projects.html" class="btn btn-outline" style="font-size:0.85rem;padding:8px 18px;">
+              <i class="fas fa-arrow-right"></i>
+              <span data-lang-key="btn-view-detail">View Details</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:36px;">
+        <a href="projects.html" class="btn btn-primary fade-in">
+          <i class="fas fa-briefcase"></i>
+          <span data-lang-key="projects-btn-all">View All Projects</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FEATURED ARTICLES
+       ══════════════════════════════════════════════════════════ -->
+  <section class="articles-section section-padding" aria-label="Featured articles">
+    <div class="container">
+      <div class="text-center fade-in">
+        <div class="section-title" data-lang-key="articles-section-title">Articles &amp; Publications</div>
+        <div class="title-divider centered"></div>
+        <p class="section-subtitle" data-lang-key="articles-section-subtitle">
+          Legal essays, research notes, and opinion pieces I have authored.
+        </p>
+      </div>
+      <div class="articles-grid">
+        <!-- Article 1 -->
+        <div class="article-card fade-in">
+          <div class="article-card-image">
+            <i class="fas fa-book-open"></i>
+            <div class="article-category">
+              <span class="badge badge-blue">Constitutional</span>
+            </div>
+          </div>
+          <div class="article-card-body">
+            <h3><a href="articles.html" data-lang-key="art-1-title">Constitutional Rights of Indigenous Peoples in Nepal</a></h3>
+            <p class="article-excerpt" data-lang-key="art-1-excerpt">
+              An analysis of how Nepal's 2015 Constitution guarantees and limits the rights of indigenous and Janajati communities.
+            </p>
+            <div class="article-meta">
+              <div class="article-meta-left">
+                <span><i class="fas fa-calendar"></i> Dec 2024</span>
+                <span><i class="fas fa-clock"></i> 8 min read</span>
+              </div>
+              <a href="articles.html" class="article-read-more" data-lang-key="btn-read-more">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Article 2 -->
+        <div class="article-card fade-in">
+          <div class="article-card-image" style="background:linear-gradient(135deg,#003366,#0d2d5e);">
+            <i class="fas fa-gavel"></i>
+            <div class="article-category">
+              <span class="badge badge-red">Criminal Law</span>
+            </div>
+          </div>
+          <div class="article-card-body">
+            <h3><a href="articles.html" data-lang-key="art-2-title">Bail Rights and Pre-Trial Detention in Nepali Criminal Procedure</a></h3>
+            <p class="article-excerpt" data-lang-key="art-2-excerpt">
+              A critical review of bail provisions under the National Criminal Procedure Code and systemic issues affecting access to bail.
+            </p>
+            <div class="article-meta">
+              <div class="article-meta-left">
+                <span><i class="fas fa-calendar"></i> Oct 2024</span>
+                <span><i class="fas fa-clock"></i> 10 min read</span>
+              </div>
+              <a href="articles.html" class="article-read-more" data-lang-key="btn-read-more">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Article 3 -->
+        <div class="article-card fade-in">
+          <div class="article-card-image" style="background:linear-gradient(135deg,#1a5c2a,#28a745);">
+            <i class="fas fa-landmark"></i>
+            <div class="article-category">
+              <span class="badge badge-gold">Supreme Court</span>
+            </div>
+          </div>
+          <div class="article-card-body">
+            <h3><a href="articles.html" data-lang-key="art-3-title">The Role of the Supreme Court in Protecting Fundamental Rights</a></h3>
+            <p class="article-excerpt" data-lang-key="art-3-excerpt">
+              Examining landmark writs and public interest litigations that have shaped constitutional fundamental rights interpretation.
+            </p>
+            <div class="article-meta">
+              <div class="article-meta-left">
+                <span><i class="fas fa-calendar"></i> Aug 2024</span>
+                <span><i class="fas fa-clock"></i> 12 min read</span>
+              </div>
+              <a href="articles.html" class="article-read-more" data-lang-key="btn-read-more">
+                Read More <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:36px;">
+        <a href="articles.html" class="btn btn-primary fade-in">
+          <i class="fas fa-newspaper"></i>
+          <span data-lang-key="articles-btn-all">View All Articles</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       CALL TO ACTION
+       ══════════════════════════════════════════════════════════ -->
+  <section class="cta-section" aria-label="Call to action">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <h2 data-lang-key="cta-title">Interested in Working Together?</h2>
+        <p data-lang-key="cta-desc">Whether you need a legal research collaborator, an intern, or just want to discuss ideas — I would love to connect.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-gold">
+            <i class="fas fa-envelope"></i>
+            <span data-lang-key="cta-btn-contact">Get In Touch</span>
+          </a>
+          <a href="assets/cv-aarav-sharma.pdf" class="btn btn-outline btn-download-cv" style="color:#fff;border-color:rgba(255,255,255,0.5);" download>
+            <i class="fas fa-download"></i>
+            <span data-lang-key="cta-btn-cv">Download CV</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- About Column -->
+          <div>
+            <div class="footer-col-title" data-lang-key="header-name">Aarav Sharma</div>
+            <p class="footer-about" data-lang-key="footer-about">
+              A passionate 5th semester Law student at Tribhuvan University, dedicated to justice, human rights, and the rule of law in Nepal.
+            </p>
+            <div class="footer-social">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="mailto:aarav.sharma@law.tu.edu.np" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+          <!-- Quick Links -->
+          <div>
+            <div class="footer-col-title" data-lang-key="footer-quicklinks">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-home">Home</span></a></li>
+              <li><a href="about.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-about">About Me</span></a></li>
+              <li><a href="practice-areas.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-practice">Areas of Interest</span></a></li>
+              <li><a href="projects.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-projects">Projects</span></a></li>
+              <li><a href="articles.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-articles">Articles</span></a></li>
+              <li><a href="contact.html"><i class="fas fa-chevron-right"></i><span data-lang-key="nav-contact">Contact</span></a></li>
+            </ul>
+          </div>
+          <!-- Legal Work -->
+          <div>
+            <div class="footer-col-title" data-lang-key="footer-legalwork">Legal Work</div>
+            <ul class="footer-links">
+              <li><a href="articles.html"><i class="fas fa-chevron-right"></i> Research Papers</a></li>
+              <li><a href="projects.html#moot"><i class="fas fa-chevron-right"></i> Moot Court</a></li>
+              <li><a href="projects.html#community"><i class="fas fa-chevron-right"></i> Community Work</a></li>
+              <li><a href="articles.html#blog"><i class="fas fa-chevron-right"></i> Legal Blog</a></li>
+              <li><a href="projects.html#internship"><i class="fas fa-chevron-right"></i> Internships</a></li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div>
+            <div class="footer-col-title" data-lang-key="footer-getintouch">Get In Touch</div>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-lang-key="contact-info-address-value">Kirtipur, Kathmandu, Nepal</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:aarav.sharma@law.tu.edu.np">aarav.sharma@law.tu.edu.np</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <span data-lang-key="header-phone">+977-98XXXXXXXX</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span data-lang-key="contact-info-hours-value">Sunday – Friday, 9:00 AM – 5:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <p data-lang-key="footer-copyright">© 2025 <strong>Aarav Sharma</strong>. All Rights Reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#" data-lang-key="footer-privacy">Privacy Policy</a>
+            <a href="#" data-lang-key="footer-disclaimer">Disclaimer</a>
+            <a href="#" data-lang-key="footer-sitemap">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
 </body>
-</html>
+              </html>
